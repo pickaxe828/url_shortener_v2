@@ -6,7 +6,7 @@ You can use it on https://urly.deta.dev/ </br>
 ## Deploy
 To deploy, you will need an account and project on [Deta](https://www.deta.sh/). </br>
 Then, you can deploy the project to your own project by pressing this button: </br>
-[![Deploy](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=your-repo-url) </br>
+[![Deploy](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=https://github.com/pickaxe828/url_shortener) </br>
 After filling the required options, you will be redirected to the Deta dashboard and you can get your own URL there. </br>
 
 ## Others
