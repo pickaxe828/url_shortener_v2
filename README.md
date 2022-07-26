@@ -1,7 +1,7 @@
 # URL shortener v2
 ## Description
 This is a simple, basic, serverless URL shortener, made with [Deta](https://www.deta.sh/). </br>
-You can use it on https://urls.deta.dev/ </br>
+You can use it on https://urly.deta.dev/ </br>
 
 ## Deploy
 To deploy, you will need an account and project on [Deta](https://www.deta.sh/). </br>
