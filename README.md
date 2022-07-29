@@ -7,15 +7,15 @@ You can use it on https://urly.deta.dev/ </br>
 
 ### [POST] /create
 Payload sending: 
-```
+```json
 {
   "uri": string
 }
 ```
 Receiving: 
-```
+```json
 {
-    "key": string # The key of the URL
+    "key": string, # The key of the URL
     "uri": string # The original, percent encoded URL
 }
 ```
