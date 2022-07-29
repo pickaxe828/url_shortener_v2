@@ -17,14 +17,6 @@ app.get('/', (req, res) => {
     res.send("Welcome to the URL shortener's backend! For more information/ usage, visit our github: ")
 })
 
-app.get("/:key", async (req, res) => {
-    let key = req.params.key
-    let data = await db.get(key)
-    let uri = decodeURIComponent(data.uri)
-    let meta = genMeta(uri)
-    res.render('template', { meta: meta })
-})
-
 app.post("/create", async (req, res) => {
     let data = {
         key: genB58(b58keyLength),
@@ -32,6 +24,14 @@ app.post("/create", async (req, res) => {
     }
     await db.put(data)
     res.send(data)
+})
+
+app.get("/:key", async (req, res) => {
+    let key = req.params.key
+    let data = await db.get(key)
+    let uri = decodeURIComponent(data.uri)
+    let meta = genMeta(uri)
+    res.render('template', { meta: meta })
 })
 
 // export 'app'
