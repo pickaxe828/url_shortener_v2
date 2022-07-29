@@ -3,6 +3,26 @@
 This is a simple, basic, serverless URL shortener's backend, made with [Deta](https://www.deta.sh/). </br>
 You can use it on https://urly.deta.dev/ </br>
 
+## API usage
+
+### [POST] /create
+Payload sending: 
+```
+{
+  "uri": string
+}
+```
+Receiving: 
+```
+{
+    "key": string # The key of the URL
+    "uri": string # The original, percent encoded URL
+}
+```
+
+### [GET] /:key
+Redirect to the saved url.
+
 ## Deploy
 To deploy, you will need an account and project on [Deta](https://www.deta.sh/). </br>
 Then, you can deploy the project to your own project by pressing this button: </br>
