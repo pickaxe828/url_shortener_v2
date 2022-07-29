@@ -9,7 +9,7 @@ function genMeta(uri) {
 function genB58(len) {
     let str = ""
     for (let i = 0; i < len; i++) {
-        str = str.concat(strSet[random.int(0, strSet.length - 1)])
+        str = str.concat(b58strSet[random.int(0, b58strSet.length - 1)])
     }
     return str
 }
