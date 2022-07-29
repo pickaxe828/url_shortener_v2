@@ -1,8 +1,9 @@
 const random = require("random")
 const b58strSet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
+const redirDelay = 2
 
 function genMeta(uri) {
-    return (`<meta http-equiv='refresh' content='5; url = ${uri}'>`)
+    return (`<meta http-equiv='refresh' content='${redirDelay}; url = ${uri}'>`)
 }
 
 function genB58(len) {
